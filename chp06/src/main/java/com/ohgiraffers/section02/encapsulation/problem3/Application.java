@@ -1,24 +1,24 @@
-package com.ohgiraffers.section02.encapsulation.problem1;
+package com.ohgiraffers.section02.encapsulation.problem3;
 
 public class Application {
     public static void main(String[] args) {
         Monster m1 = new Monster();
-        m1.name = "두치";
-        m1.hp = 200;
-        System.out.println(m1.name);
-        System.out.println(m1.hp);
+        m1.setName("두치");
+        m1.setHp(200);
+        System.out.println(m1.getName());
+        System.out.println(m1.getHp());
 
         Monster m2 = new Monster();
-        m2.name = "두치";
-        m2.hp = -200;
-        System.out.println(m2.name);
-        System.out.println(m2.hp);
+        m2.setName("뿌꾸");
+        m2.setHp(-200);
+        System.out.println(m2.getName());
+        System.out.println(m2.getHp());
 
         Monster m3 = new Monster();
-        m3.name = "드라큘라";
+        m3.setName("드라큘라");
         m3.setHp(-200);
-        System.out.println(m3.name);
-        System.out.println(m3.hp);
+        System.out.println(m3.getName());
+        System.out.println(m3.getHp());
 
     }
 }

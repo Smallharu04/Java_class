@@ -1,8 +1,15 @@
-package com.ohgiraffers.section02.encapsulation.problem1;
+package com.ohgiraffers.section02.encapsulation.problem3;
 
 public class Monster {
-    String name;
-    int hp;
+   private String name;
+   private int hp;
+
+   public void setName(String name){
+       this.name = name;
+   }
+   public String getName(){
+       return name;
+   }
 
     public void setHp (int hp) {
         if (hp > 0) {
@@ -13,6 +20,10 @@ public class Monster {
             System.out.println("음수 값이 입력 되어 몬스터의 체력을 0으로 변경 ");
         }
 
+    }
+
+    public int getHp(){
+       return hp;
     }
 
 }
